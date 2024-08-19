@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.932);
+    overflow-x: hidden;
+}
+
+#Accueil{
+    background-blend-mode: black;
+    background-image: url(image/background02.png);
+    background-blend-mode: c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:0px 0px 40px 40px;
+    padding-bottom: 10%;
+    width: 100%;
+    transition: 0.5s;
+}
+    
+.header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32, 39, 39, 0.397);
+    top: 0px;
+    left:0;
+    right: 0;
+    border-radius: 30px;
+    margin: 30px;
+    box-shadow: 0px 0px 15px 0px aqua;
+    transition: 0.5s;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+
+.nav input {
+  opacity: 0;
+}
+
+.menu {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  display: none;
+}
+
+.navbar a{
+    color: aliceblue;
+    position: relative;
+    margin-right: 40px;
+    margin-left: 20px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .7s;
+}
+
+.navbar a:hover{
+    background: 100px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 5px 10px 0px white;
+    border-radius: 20px;
+    padding: 15px;
+    color: aqua;
+}
+
+section{
+    display: flex;
+    margin-top: 120px;
+    transition: 0.5s;
+}
+
+.left{
+    padding: 20px;
+    width: 62%;
+}
+
+.left h1{
+    color: aqua;
+    padding: 100px;
+    font-size: 50px;
+}
+
+.right{
+    position: center;
+    padding: 30px;
+}
+
+.right img{
+    border-radius: 170px;
+    position: sticky;
+    top: 0px;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.p1{
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 3em;
+    font-size: x-large;
+    font-weight: 1000;
+    color: white;
+}
+
+.p1 span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+#all{ 
+    display: inline;
+    transition: 0.5s;
+
+}
+
+.gros_titre{ 
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 34%; 
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 15px;
+    width: 64%;
+    box-shadow: 0px 4px 10px 0px aqua;
+    margin-top: 40px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+}
+
+#Mission{
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 50px;
+    margin: 15px;
+    width: 50%;
+    height: 50%;
+    transition: 0.5s;
+}
+
+#Mission:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 3px aqua;
+    font-size: 1.7em;
+    padding: 50px;
+}
+
+.titre_mission a{
+    color: aqua;
+    font-weight: 500;
+    font-size: 1em;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+.titre_mission a:hover{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2em;
+}
+.det_mission p{
+    color: white;
+    font-size: 1em;
+    font-style: oblique;
+}
+.det_mission p:hover{
+    color: yellow;
+    font-style: normal;
+}
+
+#Particularité{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+    width: 50%;
+    height: 50%;
+    font-size: 1.5em;
+    margin-left: 500px;
+    transition: 0.5s;
+}
+
+#Particularité:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 3px aqua;
+    font-size: 1.5em;
+    padding: 50px;
+}
+
+.titre_particularité a{
+    color: aqua;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+.titre_particularité a:hover{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    color: red;
+    font-weight: 600;
+    font-size: 2em;
+    font-style: italic;
+}
+.det_particularité p{
+    color: white;
+    font-size: auto;
+    font-style: oblique;
+}
+.det_particularité p:hover{
+    color: yellow;
+    font-style: normal;
+}
+
+.liste{
+    color: aqua;
+    padding-left: 30px;
+}
+
+#Objectif{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+    width: 50%;
+    height: 50%;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+#Objectif:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 3px aqua;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+.titre_objectif a{
+    color: aqua;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+.titre_objectif a:hover{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2em;
+}
+.det_objectif p{
+    color: white;
+    font-size: auto;
+    font-style: oblique;
+}
+.det_objectif p:hover{
+    color: yellow;
+    font-style: normal;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+#contact{ 
+    color: aqua;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 34%; 
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    box-shadow: 0px 5px 10px 0px aqua;
+    transition: 0.5s;
+}
+
+.det_contact{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin:30px 10px 20px 20px;
+    padding: 20px;
+}
+
+.det_contact a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: .5s;
+    padding: 10px; 
+    margin: 10px;   
+}
+
+.voalohany{
+    margin: 10px;
+}
+
+.faharoa{
+    margin: 10px;
+}
+
+.facebook{
+  display: flex;
+}
+.logofacebook{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.tsapy{
+  display: flex;
+}
+.logotsapy{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.mail{
+  display: flex;
+}
+.logomail{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.link{
+  display: flex;
+}
+.logolink{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.lieu{
+  display: flex;
+}
+.logolieu{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.insta{
+  display: flex;
+}
+.logoinsta{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+
+@media screen and (max-width: 890px){
+    #Particularité {
+        margin-left: 50px;
+    }
+    #Objectif {
+        margin-left: 50px;
+    }
+    .gros_titre{
+        left: 10%;
+    }
+    section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        left: 10%;
+    }
+    .det_contact{
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    #Accueil{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .menu {
+      width: 500px;
+      height: 500px;
+      display: block;
+    }
+    .navbar{
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
+    
+    .nav input:checked +.navbar {
+      opacity: 1;
+    }
+    section{
+        margin-top: 200px;
+    }
+    .detail{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:650px){
+    #Mission{
+        width: 80%;
+        height: 60%;
+        left: 15%;
+        font-size: 1.5em;
+
+    }
+    #Mission:hover{
+        font-size: 1.6em;
+    }
+    #Particularité{
+        width: 80%;
+        height: 60%;
+        left: 15%;
+        font-size: 1.5em;
+
+    }
+    .left{
+        width: 90%;
+        height: auto;
+    }
+    #Particularité:hover{
+        font-size: 1.6em;
+    }
+    #Objectif{
+        width: 80%;
+        height: 60%;
+        left: 15%;
+        font-size: 1.5em;
+
+    }
+    #Objectif:hover{
+        font-size: 1.6em;
+    }
+    
+}
+
+@media  screen and (max-width:450px) {
+    .left h1{
+        font-size: 2em;
+    }
+    .p1{
+        font-size: 1.3em;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    } 
+    .left{
+        width: 90%;
+        height: auto;
+    }
+    .right{
+        width: auto;
+        height: 0 auto;
+    }
+    .det_mission{
+        font-size: 0.6em;
+        padding: 10px;
+    } 
+    .det_particularité{
+        font-size: 0.6em;
+        padding: 10px;
+    } 
+    .det_objectif{
+        font-size: 0.6em;
+        padding: 10px;
+    }
+}
